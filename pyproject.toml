@@ -1,0 +1,21 @@
+[project]
+name = "trailine-research"
+version = "0.1.0"
+description = "Trailine 프로젝트에 사용될 코스 분석 관련 저장소"
+readme = "README.md"
+requires-python = ">=3.13"
+dependencies = [
+    "numpy>=2.3.3",
+    "pandas>=2.3.2",
+]
+
+[project.optional-dependencies]
+test = [
+    "pytest>=8.4.2",
+]
+notebook = [
+    "jupyterlab>=4.4.9",
+]
+visual = [
+    "matplotlib>=3.10.6",
+]
