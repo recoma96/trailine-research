@@ -13,7 +13,7 @@ dependencies = [
 
 [tool.setuptools]
 package-dir = {"" = "src", "scripts" = "scripts"}
-packages = ["trailine", "libs", "scripts"]
+packages = ["trailine", "scripts"]
 
 [project.scripts]
 preprocess-raw = "scripts.preprocess_raw:main"
