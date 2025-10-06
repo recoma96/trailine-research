@@ -7,7 +7,16 @@ requires-python = ">=3.13"
 dependencies = [
     "numpy>=2.3.3",
     "pandas>=2.3.2",
+    "pydantic>=2.11.10",
+    "pyright>=1.1.406",
 ]
+
+[tool.setuptools]
+package-dir = {"" = "src", "scripts" = "scripts"}
+packages = ["trailine", "scripts"]
+
+[project.scripts]
+preprocess-raw = "scripts.preprocess_raw:main"
 
 [project.optional-dependencies]
 test = [
@@ -18,4 +27,7 @@ notebook = [
 ]
 visual = [
     "matplotlib>=3.10.6",
+]
+script = [
+    "typer>=0.19.2",
 ]
