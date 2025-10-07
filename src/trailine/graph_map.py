@@ -82,6 +82,33 @@ class GraphMap:
         self._set_waypoints()
         self._set_tracks()
 
+    def get_waypoint(self, code: str) -> Optional[Waypoint]:
+        return self.waypoints.get(code)
+    
+    def search_waypoints(
+            self,
+            *,
+            parent_place_name: Optional[str] = None,
+            name: Optional[str] = None
+    ) -> List[Waypoint]:
+        """
+        조건에 맞는 Waypoint를 검색.
+
+        :param parent_place_name: Waypoint의 상위 카테고리 이름 (부분 일치)
+        :param name: Waypoint 이름 (부분 일치)
+        :return: 검색 조건에 맞는 Waypoint 리스트
+        """
+        candidates = list(self.waypoints.values())
+
+        if parent_place_name:
+            candidates = [wp for wp in candidates if parent_place_name in wp.parent_place.name]
+        if name:
+            candidates = [wp for wp in candidates if name in wp.name]
+
+        # 글자 오름차순으로 정렬
+        candidates.sort(key=lambda e: e.name)
+        return candidates
+
     def _set_waypoints(self):
         """
         /datas/processed/waypoint/list.csv 파일로부터 정보를 가져온다.
