@@ -5,7 +5,7 @@
       "type": "Feature",
       "properties": {
         "kind": "track",
-        "name": "설악산-중청-소청",
+        "name": "중청-소청",
         "start_waypoint_code": "88ae4e27d2344f7697b66aa0c9843660",
         "end_waypoint_code": "8ee099d5adad4c2986b145ff29db522e"
       },

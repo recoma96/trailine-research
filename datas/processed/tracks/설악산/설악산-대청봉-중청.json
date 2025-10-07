@@ -5,7 +5,7 @@
       "type": "Feature",
       "properties": {
         "kind": "track",
-        "name": "설악산-대청봉-중청",
+        "name": "대청봉-중청",
         "start_waypoint_code": "69b3d7a1eeb2404ca2e461fa108f42a8",
         "end_waypoint_code": "88ae4e27d2344f7697b66aa0c9843660"
       },

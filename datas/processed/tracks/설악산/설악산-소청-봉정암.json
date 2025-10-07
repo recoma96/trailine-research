@@ -5,7 +5,7 @@
       "type": "Feature",
       "properties": {
         "kind": "track",
-        "name": "설악산-소청-봉정암",
+        "name": "소청-봉정암",
         "start_waypoint_code": "8ee099d5adad4c2986b145ff29db522e",
         "end_waypoint_code": "6f4ff47dfb2e408382fd742b13f0c8d4"
       },

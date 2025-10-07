@@ -5,7 +5,7 @@
       "type": "Feature",
       "properties": {
         "kind": "track",
-        "name": "설악산-설악06-06-대청봉",
+        "name": "설악06-06-대청봉",
         "start_waypoint_code": "31de89d9ad744be7a2bae3ae896d0ec6",
         "end_waypoint_code": "69b3d7a1eeb2404ca2e461fa108f42a8"
       },
