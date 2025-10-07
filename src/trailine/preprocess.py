@@ -48,7 +48,7 @@ class CoursePreProcessor:
         웨이포인트 관련 csv 파일 세팅
         파일들이 없을 경우 자동생성
         """
-        if not os.path.isdir(WAYPOINT_LIST_PATH):
+        if not os.path.isfile(WAYPOINT_LIST_PATH):
             os.makedirs(os.path.dirname(WAYPOINT_LIST_PATH), exist_ok=True)
             pd.DataFrame(columns=WAYPOINT_LIST_COLUMNS).to_csv(WAYPOINT_LIST_PATH, index=False)
 
