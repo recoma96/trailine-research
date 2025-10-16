@@ -2,8 +2,8 @@ import os
 
 import pandas as pd
 
-
-DATA_DIR = os.path.join(os.getcwd(), "datas")
+BASE_DIR = ""
+DATA_DIR = os.path.join(BASE_DIR, "datas")
 RAW_DATA_DIR = os.path.join(DATA_DIR, "raw")
 
 PROCESSED_DATA_DIR = os.path.join(DATA_DIR, "processed")

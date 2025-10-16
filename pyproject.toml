@@ -5,6 +5,7 @@ description = "Trailine 프로젝트에 사용될 코스 분석 관련 저장소
 readme = "README.md"
 requires-python = ">=3.13"
 dependencies = [
+    "haversine>=2.9.0",
     "numpy>=2.3.3",
     "pandas>=2.3.2",
     "pydantic>=2.11.10",
@@ -26,6 +27,7 @@ notebook = [
     "jupyterlab>=4.4.9",
 ]
 visual = [
+    "folium>=0.20.0",
     "matplotlib>=3.10.6",
 ]
 script = [

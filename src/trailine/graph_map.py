@@ -49,6 +49,9 @@ class Waypoint(LocationPoint):
         super().__init__(lat, lon, ele)
         self.code, self.name, self.parent_place = code, name, parent_place
 
+    def __str__(self) -> str:
+        return f"[{self.code}] [{self.parent_place.name}] - {self.name}"
+
 
 class Track:
     """
