@@ -5,9 +5,9 @@
       "type": "Feature",
       "properties": {
         "kind": "track",
-        "name": "소청-봉정암",
-        "start_waypoint_code": "8ee099d5adad4c2986b145ff29db522e",
-        "end_waypoint_code": "6f4ff47dfb2e408382fd742b13f0c8d4"
+        "name": "설악산-소청-봉정암",
+        "start_waypoint_code": "6fbe1ee7d4884f0dba9242b81817e3a4",
+        "end_waypoint_code": "bb97c1f538704a548f77b7b180da4551"
       },
       "geometry": {
         "type": "LineString",
@@ -479,7 +479,7 @@
       "type": "Feature",
       "properties": {
         "kind": "start",
-        "code": "8ee099d5adad4c2986b145ff29db522e"
+        "code": "6fbe1ee7d4884f0dba9242b81817e3a4"
       },
       "geometry": {
         "type": "Point",
@@ -494,7 +494,7 @@
       "type": "Feature",
       "properties": {
         "kind": "end",
-        "code": "6f4ff47dfb2e408382fd742b13f0c8d4"
+        "code": "bb97c1f538704a548f77b7b180da4551"
       },
       "geometry": {
         "type": "Point",

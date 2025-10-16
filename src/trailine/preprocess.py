@@ -37,9 +37,12 @@ class CoursePreProcessor:
         """
         waypoint_codes: List[str] = []
         for i, segment in enumerate(self.raw_course.segments):
-            new_waypoint_codes = self._save_waypoints(segment, i > 0)
+            new_waypoint_codes = self._get_or_save_waypoints(segment, i > 0)
             # 두번째 세그먼트부터 시작 웨이포인트를 무시 (중복이슈)
-            waypoint_codes.extend(new_waypoint_codes)
+            for new_waypoint in new_waypoint_codes:
+                waypoint_codes.append(new_waypoint)
+
+            print(i, len(waypoint_codes), waypoint_codes[-2], waypoint_codes[-1])
             self._save_tracks(segment, waypoint_codes[-2], waypoint_codes[-1])
 
 
@@ -53,9 +56,9 @@ class CoursePreProcessor:
             pd.DataFrame(columns=WAYPOINT_LIST_COLUMNS).to_csv(WAYPOINT_LIST_PATH, index=False)
 
 
-    def _save_waypoints(self, segment: RawSegment, ignore_start: bool = False) -> List[str]:
+    def _get_or_save_waypoints(self, segment: RawSegment, ignore_start: bool = False) -> List[str]:
         """
-        웨이포인트 데이터 적재
+        웨이포인트 데이터 조회 및 (없을 경우) 적재
         """
 
         # 웨이포인트 파일 로드
@@ -68,14 +71,14 @@ class CoursePreProcessor:
         # 생성 및 갱신할 웨이포인트 수집
         waypoints_to_check = self._collect_waypoints_for_create_or_update(segment, ignore_start)
         new_waypoints: List[Dict[str, Any]] = []
+        waypoint_codes: List[str] = []
         for name, loc in waypoints_to_check:
             # 기존의 웨이포인트가 존재하는 지 확인
-            is_waypoint_exists = not waypoints_df[
+            current_waypoint = waypoints_df[
                 (waypoints_df["parent_place"] == parent_place)
                 & (waypoints_df["name"] == name)
-            ].empty
-
-            if not is_waypoint_exists:
+            ]
+            if current_waypoint.empty:
                 code = generate_unique_code()
                 new_waypoint = {
                     "code": code,
@@ -86,6 +89,9 @@ class CoursePreProcessor:
                     "ele": loc.ele
                 }
                 new_waypoints.append(new_waypoint)
+                waypoint_codes.append(new_waypoint["code"])
+            else:
+                waypoint_codes.append(current_waypoint.iloc[0]["code"])
 
         # list.csv 업데이트
         new_df = pd.DataFrame(new_waypoints)
@@ -93,7 +99,7 @@ class CoursePreProcessor:
             waypoints_df = pd.concat([waypoints_df, new_df], ignore_index=True)
         waypoints_df.to_csv(WAYPOINT_LIST_PATH, index=False)
 
-        return [w["code"] for w in new_waypoints]
+        return waypoint_codes
 
 
     def _save_tracks(self, segment: RawSegment, start_waypoint_code: str, end_waypoint_code: str) -> None:
@@ -127,7 +133,8 @@ class CoursePreProcessor:
         """
         웨이포인트 시작 및 끝지점 추출
         """
-        target_waypoints = [(segment.start, segment.track[0])]
+        target_waypoints = []
         if not ignore_start and len(segment.track) > 1:
-            target_waypoints.append((segment.end, segment.track[-1]))
+            target_waypoints.append((segment.start, segment.track[0]))
+        target_waypoints.append((segment.end, segment.track[-1]))
         return target_waypoints

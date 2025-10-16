@@ -5,9 +5,9 @@
       "type": "Feature",
       "properties": {
         "kind": "track",
-        "name": "제2약수터-과천향교",
-        "start_waypoint_code": "3c011ebf53d04c34ac7ed1fc262576cb",
-        "end_waypoint_code": "5913dfeea6db494abbbd9941cefeb04a"
+        "name": "관악산-제2약수터-과천향교",
+        "start_waypoint_code": "beab507b1ffb4b908443d7f22fb014e8",
+        "end_waypoint_code": "d977b51ed0034380b1dce025745138f3"
       },
       "geometry": {
         "type": "LineString",
@@ -914,7 +914,7 @@
       "type": "Feature",
       "properties": {
         "kind": "start",
-        "code": "3c011ebf53d04c34ac7ed1fc262576cb"
+        "code": "beab507b1ffb4b908443d7f22fb014e8"
       },
       "geometry": {
         "type": "Point",
@@ -929,7 +929,7 @@
       "type": "Feature",
       "properties": {
         "kind": "end",
-        "code": "5913dfeea6db494abbbd9941cefeb04a"
+        "code": "d977b51ed0034380b1dce025745138f3"
       },
       "geometry": {
         "type": "Point",

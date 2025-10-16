@@ -5,9 +5,9 @@
       "type": "Feature",
       "properties": {
         "kind": "track",
-        "name": "구곡담계곡",
-        "start_waypoint_code": "d4358f32f4024357a1c0872fd5ffc15f",
-        "end_waypoint_code": "d43ff9b70eb24490a314025fd3a88f4f"
+        "name": "설악산-해탈고개-수렴동대피소",
+        "start_waypoint_code": "c8f74ffba33943e797682d18efac43d6",
+        "end_waypoint_code": "739d23c118e04e3d842cc1c25d890d25"
       },
       "geometry": {
         "type": "LineString",
@@ -2099,7 +2099,7 @@
       "type": "Feature",
       "properties": {
         "kind": "start",
-        "code": "d4358f32f4024357a1c0872fd5ffc15f"
+        "code": "c8f74ffba33943e797682d18efac43d6"
       },
       "geometry": {
         "type": "Point",
@@ -2114,7 +2114,7 @@
       "type": "Feature",
       "properties": {
         "kind": "end",
-        "code": "d43ff9b70eb24490a314025fd3a88f4f"
+        "code": "739d23c118e04e3d842cc1c25d890d25"
       },
       "geometry": {
         "type": "Point",

@@ -5,9 +5,9 @@
       "type": "Feature",
       "properties": {
         "kind": "track",
-        "name": "봉정암-해탈고개",
-        "start_waypoint_code": "6f4ff47dfb2e408382fd742b13f0c8d4",
-        "end_waypoint_code": "d4358f32f4024357a1c0872fd5ffc15f"
+        "name": "설악산-봉정암-해탈고개",
+        "start_waypoint_code": "bb97c1f538704a548f77b7b180da4551",
+        "end_waypoint_code": "c8f74ffba33943e797682d18efac43d6"
       },
       "geometry": {
         "type": "LineString",
@@ -279,7 +279,7 @@
       "type": "Feature",
       "properties": {
         "kind": "start",
-        "code": "6f4ff47dfb2e408382fd742b13f0c8d4"
+        "code": "bb97c1f538704a548f77b7b180da4551"
       },
       "geometry": {
         "type": "Point",
@@ -294,7 +294,7 @@
       "type": "Feature",
       "properties": {
         "kind": "end",
-        "code": "d4358f32f4024357a1c0872fd5ffc15f"
+        "code": "c8f74ffba33943e797682d18efac43d6"
       },
       "geometry": {
         "type": "Point",

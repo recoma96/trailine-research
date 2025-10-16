@@ -5,9 +5,9 @@
       "type": "Feature",
       "properties": {
         "kind": "track",
-        "name": "오색1쉼터-설악06-06",
-        "start_waypoint_code": "2b67005bc6934869b2deb23f56490a08",
-        "end_waypoint_code": "31de89d9ad744be7a2bae3ae896d0ec6"
+        "name": "설악산-오색1쉼터-설악06-06",
+        "start_waypoint_code": "2135ce2946a341c884affc7452afb209",
+        "end_waypoint_code": "cd83d2fff59a4405987cc2f43c25fc58"
       },
       "geometry": {
         "type": "LineString",
@@ -664,7 +664,7 @@
       "type": "Feature",
       "properties": {
         "kind": "start",
-        "code": "2b67005bc6934869b2deb23f56490a08"
+        "code": "2135ce2946a341c884affc7452afb209"
       },
       "geometry": {
         "type": "Point",
@@ -679,7 +679,7 @@
       "type": "Feature",
       "properties": {
         "kind": "end",
-        "code": "31de89d9ad744be7a2bae3ae896d0ec6"
+        "code": "cd83d2fff59a4405987cc2f43c25fc58"
       },
       "geometry": {
         "type": "Point",

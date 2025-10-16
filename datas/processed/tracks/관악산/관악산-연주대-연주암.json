@@ -5,9 +5,9 @@
       "type": "Feature",
       "properties": {
         "kind": "track",
-        "name": "연주대-연주암",
-        "start_waypoint_code": "cafc02727f37402fbf330a8c393f8c7d",
-        "end_waypoint_code": "04419d8ab47d4c9fbc3364da10022926"
+        "name": "관악산-연주대-연주암",
+        "start_waypoint_code": "fddfbbda83634cf592b105c8a1bb475e",
+        "end_waypoint_code": "9a106a85a5a74b87be71a3a5c776c5ad"
       },
       "geometry": {
         "type": "LineString",
@@ -234,7 +234,7 @@
       "type": "Feature",
       "properties": {
         "kind": "start",
-        "code": "cafc02727f37402fbf330a8c393f8c7d"
+        "code": "fddfbbda83634cf592b105c8a1bb475e"
       },
       "geometry": {
         "type": "Point",
@@ -249,7 +249,7 @@
       "type": "Feature",
       "properties": {
         "kind": "end",
-        "code": "04419d8ab47d4c9fbc3364da10022926"
+        "code": "9a106a85a5a74b87be71a3a5c776c5ad"
       },
       "geometry": {
         "type": "Point",

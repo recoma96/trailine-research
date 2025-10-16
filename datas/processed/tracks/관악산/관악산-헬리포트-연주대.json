@@ -5,9 +5,9 @@
       "type": "Feature",
       "properties": {
         "kind": "track",
-        "name": "헬리포트-연주대",
-        "start_waypoint_code": "0910c9e136d148bb87ec3414ced1102b",
-        "end_waypoint_code": "cafc02727f37402fbf330a8c393f8c7d"
+        "name": "관악산-헬리포트-연주대",
+        "start_waypoint_code": "2be09ea7e8d74b95b0fcd62c3c977dfc",
+        "end_waypoint_code": "fddfbbda83634cf592b105c8a1bb475e"
       },
       "geometry": {
         "type": "LineString",
@@ -449,7 +449,7 @@
       "type": "Feature",
       "properties": {
         "kind": "start",
-        "code": "0910c9e136d148bb87ec3414ced1102b"
+        "code": "2be09ea7e8d74b95b0fcd62c3c977dfc"
       },
       "geometry": {
         "type": "Point",
@@ -464,7 +464,7 @@
       "type": "Feature",
       "properties": {
         "kind": "end",
-        "code": "cafc02727f37402fbf330a8c393f8c7d"
+        "code": "fddfbbda83634cf592b105c8a1bb475e"
       },
       "geometry": {
         "type": "Point",

@@ -5,9 +5,9 @@
       "type": "Feature",
       "properties": {
         "kind": "track",
-        "name": "수렴동계곡 상부 (수렴동대피소 - 영시암)",
-        "start_waypoint_code": "d43ff9b70eb24490a314025fd3a88f4f",
-        "end_waypoint_code": "1be9e0bd35ed4713a6d504b115d78b4d"
+        "name": "설악산-수렴동대피소-영시암",
+        "start_waypoint_code": "739d23c118e04e3d842cc1c25d890d25",
+        "end_waypoint_code": "3f6e3d54168e421aac1b2a73f2388412"
       },
       "geometry": {
         "type": "LineString",
@@ -484,7 +484,7 @@
       "type": "Feature",
       "properties": {
         "kind": "start",
-        "code": "d43ff9b70eb24490a314025fd3a88f4f"
+        "code": "739d23c118e04e3d842cc1c25d890d25"
       },
       "geometry": {
         "type": "Point",
@@ -499,7 +499,7 @@
       "type": "Feature",
       "properties": {
         "kind": "end",
-        "code": "1be9e0bd35ed4713a6d504b115d78b4d"
+        "code": "3f6e3d54168e421aac1b2a73f2388412"
       },
       "geometry": {
         "type": "Point",

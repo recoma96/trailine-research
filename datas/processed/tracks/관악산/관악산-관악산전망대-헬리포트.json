@@ -5,9 +5,9 @@
       "type": "Feature",
       "properties": {
         "kind": "track",
-        "name": "사당능선",
-        "start_waypoint_code": "51f51514f04743bb87c35f150efa9509",
-        "end_waypoint_code": "0910c9e136d148bb87ec3414ced1102b"
+        "name": "관악산-관악산전망대-헬리포트",
+        "start_waypoint_code": "223ec0373d6b43b2bf246ed260581a27",
+        "end_waypoint_code": "2be09ea7e8d74b95b0fcd62c3c977dfc"
       },
       "geometry": {
         "type": "LineString",
@@ -1069,7 +1069,7 @@
       "type": "Feature",
       "properties": {
         "kind": "start",
-        "code": "51f51514f04743bb87c35f150efa9509"
+        "code": "223ec0373d6b43b2bf246ed260581a27"
       },
       "geometry": {
         "type": "Point",
@@ -1084,7 +1084,7 @@
       "type": "Feature",
       "properties": {
         "kind": "end",
-        "code": "0910c9e136d148bb87ec3414ced1102b"
+        "code": "2be09ea7e8d74b95b0fcd62c3c977dfc"
       },
       "geometry": {
         "type": "Point",

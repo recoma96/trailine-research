@@ -5,9 +5,9 @@
       "type": "Feature",
       "properties": {
         "kind": "track",
-        "name": "연주암-제2약수터",
-        "start_waypoint_code": "04419d8ab47d4c9fbc3364da10022926",
-        "end_waypoint_code": "3c011ebf53d04c34ac7ed1fc262576cb"
+        "name": "관악산-연주암-제2약수터",
+        "start_waypoint_code": "9a106a85a5a74b87be71a3a5c776c5ad",
+        "end_waypoint_code": "beab507b1ffb4b908443d7f22fb014e8"
       },
       "geometry": {
         "type": "LineString",
@@ -409,7 +409,7 @@
       "type": "Feature",
       "properties": {
         "kind": "start",
-        "code": "04419d8ab47d4c9fbc3364da10022926"
+        "code": "9a106a85a5a74b87be71a3a5c776c5ad"
       },
       "geometry": {
         "type": "Point",
@@ -424,7 +424,7 @@
       "type": "Feature",
       "properties": {
         "kind": "end",
-        "code": "3c011ebf53d04c34ac7ed1fc262576cb"
+        "code": "beab507b1ffb4b908443d7f22fb014e8"
       },
       "geometry": {
         "type": "Point",

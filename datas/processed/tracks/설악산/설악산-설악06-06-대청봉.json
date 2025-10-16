@@ -5,9 +5,9 @@
       "type": "Feature",
       "properties": {
         "kind": "track",
-        "name": "설악06-06-대청봉",
-        "start_waypoint_code": "31de89d9ad744be7a2bae3ae896d0ec6",
-        "end_waypoint_code": "69b3d7a1eeb2404ca2e461fa108f42a8"
+        "name": "설악산-설악06-06-대청봉",
+        "start_waypoint_code": "cd83d2fff59a4405987cc2f43c25fc58",
+        "end_waypoint_code": "aaec9d8d7bc74b63aee88bdd2d40d1c8"
       },
       "geometry": {
         "type": "LineString",
@@ -909,7 +909,7 @@
       "type": "Feature",
       "properties": {
         "kind": "start",
-        "code": "31de89d9ad744be7a2bae3ae896d0ec6"
+        "code": "cd83d2fff59a4405987cc2f43c25fc58"
       },
       "geometry": {
         "type": "Point",
@@ -924,7 +924,7 @@
       "type": "Feature",
       "properties": {
         "kind": "end",
-        "code": "69b3d7a1eeb2404ca2e461fa108f42a8"
+        "code": "aaec9d8d7bc74b63aee88bdd2d40d1c8"
       },
       "geometry": {
         "type": "Point",
